@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --dark: #131417;
+  --dark-lighter: #1e1f26;
+  --grey: #e2e3e357;
+  --green-lighter: #47cf73;
+  --green: #248c46;
+  --white: #ffffff;
+}
+.container {
+  background-color: var(--dark);
+  min-height: 100vh;
+  padding-bottom: 200px;
+  width: 100%;
+  color: var(--white);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hero-section {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 60px;
+  line-height: 80px;
+}
+.loginbtn {
+  border: none;
+  padding: 10px 25px;
+}
+.landing-navbar {
+  padding: 2% 10%;
+}
+.landing-img {
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+  margin-top: 50px;
+  position: relative;
+}
+.landing-img img {
+  border-radius: 15px;
+}
+.wiggle-wrapper {
+  position: relative;
+}
+.wiggle-svg {
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+  rotate: 3deg;
+}
+.features-wrapper {
+  z-index: 100;
+  position: absolute;
+  padding: 50px 40px;
+  border-top: 2px solid var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  bottom: 10px;
+  background-color: var(--dark);
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon {
+  font-size: 48px;
+  color: var(--green-lighter);
+}
+.feature-description {
+  font-size: 24px;
+  text-align: center;
+}
+.right-arrow-icon {
+  font-size: 44px;
+}

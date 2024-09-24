@@ -1,0 +1,29 @@
+{
+  "snippets": [
+    {
+      "id": 1,
+      "formatted_code": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str1[100] = \"Hello, \";\n    char str2[100] = \"World!\";\n    strcat(str1, str2);\n    printf(\"%s\\n\", str1);\n    return 0;\n}",
+      "language": "C"
+    },
+    {
+      "id": 2,
+      "formatted_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string str1 = \"Hello, \";\n    std::string str2 = \"World!\";\n    std::string result = str1 + str2;\n    std::cout << result << std::endl;\n    return 0;\n}",
+      "language": "C++"
+    },
+    {
+      "id": 3,
+      "formatted_code": "def multiply_matrices(a, b):\n    result = [[0 for _ in range(len(b[0]))] for _ in range(len(a))]\n    for i in range(len(a)):\n        for j in range(len(b[0])):\n            for k in range(len(b)):\n                result[i][j] += a[i][k] * b[k][j]\n    return result\n\nmatrix1 = [[1, 2], [3, 4]]\nmatrix2 = [[2, 0], [1, 2]]\nresult = multiply_matrices(matrix1, matrix2)\nfor r in result:\n    print(r)",
+      "language": "Python"
+    },
+    {
+      "id": 4,
+      "formatted_code": "public class MatrixMultiplication {\n    public static void main(String[] args) {\n        int[][] a = { {1, 2}, {3, 4} };\n        int[][] b = { {2, 0}, {1, 2} };\n        int[][] result = new int[2][2];\n        for (int i = 0; i < 2; i++) {\n            for (int j = 0; j < 2; j++) {\n                for (int k = 0; k < 2; k++) {\n                    result[i][j] += a[i][k] * b[k][j];\n                }\n            }\n        }\n        for (int i = 0; i < 2; i++) {\n            for (int j = 0; j < 2; j++) {\n                System.out.print(result[i][j] + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+      "language": "Java"
+    },
+    {
+      "id": 5,
+      "formatted_code": "function multiplyMatrices(a, b) {\n    let result = Array(a.length).fill(0).map(() => Array(b[0].length).fill(0));\n    for (let i = 0; i < a.length; i++) {\n        for (let j = 0; j < b[0].length; j++) {\n            for (let k = 0; k < b.length; k++) {\n                result[i][j] += a[i][k] * b[k][j];\n            }\n        }\n    }\n    return result;\n}\n\nlet matrix1 = [ [1, 2], [3, 4] ];\nlet matrix2 = [ [2, 0], [1, 2] ];\nlet result = multiplyMatrices(matrix1, matrix2);\nconsole.log(result);",
+      "language": "Js"
+    }
+  ]
+}
